@@ -76,31 +76,74 @@ body {
   }
 
   @media (max-width: 768px) {
-    h1, h2 {
-        letter-spacing: 0px;
-      }
-    
     .card {
-      height: 80%;
-      width: 100%;
-      max-width: 400px;
-      padding: 10px;
+      height: auto;
+      padding: 20px;
     }
-  
+    
     .card h1 {
-      font-size: 50px;
-    }
-  
-    .card h2 {
       font-size: 40px;
     }
-  
+    
+    .card h2 {
+      font-size: 30px;
+    }
+    
     .card .links a {
-      font-size: 23px;
+      font-size: 20px;
       margin: 5px 0;
+    }
+    
+    .skills-section h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .skills-section li {
+      margin: 5px;
+      font-size: 14px;
+    }
+    
+    .skills-section i {
+      font-size: 30px;
     }
   }
 
+  @media (max-height: 768px) {
+    .card {
+      height: auto;
+      padding: 10px;
+    }
+    
+    .card h1 {
+      font-size: 30px;
+    }
+    
+    .card h2 {
+      font-size: 20px;
+    }
+    
+    .card .links a {
+      font-size: 20px;
+      margin: 5px 0;
+    }
+    
+    .skills-section h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .skills-section li {
+      margin: 5px;
+      font-size: 14px;
+    }
+    
+    .skills-section i {
+      font-size: 20px;
+    }
+  }
+  
+  
   .card .links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
