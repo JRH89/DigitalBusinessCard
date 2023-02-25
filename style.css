@@ -205,11 +205,23 @@ body {
   .skills-section li:hover {
     color: #00ff7f;
   }
+
+  
   @media (min-width: 769px) {
     .card .links {
       justify-content: center;
       align-items: center;
     }
+
+
+
+
+
+
+
+
+
+
   }
   
   
