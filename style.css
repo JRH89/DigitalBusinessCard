@@ -198,6 +198,35 @@ body {
     }
   }
 
+  @media (max-height: 768px) {
+    
+    .card {
+      text-align: center;
+      max-width: 90%;
+      overflow: auto;
+    }
+
+    .card .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px 50px;
+      }
+      
+    .skills-section {
+      flex-wrap: wrap;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .skills-section img {
+      width: 90%;
+    }
+  }
+
 
   
   
