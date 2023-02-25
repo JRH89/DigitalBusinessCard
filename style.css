@@ -1,10 +1,6 @@
 body {
     background-image: url("space2.jpg");
     overflow: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  height: 100vh;
   }
   
   .card {
@@ -112,35 +108,44 @@ body {
   @media (max-height: 768px) {
     .card {
       height: auto;
-      padding: 10px;
+      padding: 0px;
+      
     }
     
     .card h1 {
       font-size: 30px;
+      margin: 0px;
     }
     
     .card h2 {
       font-size: 20px;
+      margin: 0px, 0;
     }
     
     .card .links a {
-      font-size: 20px;
-      margin: 5px 0;
+      font-size: 15px;
+      margin: 0px 0;
     }
     
     .skills-section h3 {
       font-size: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 0px 0;
     }
     
     .skills-section li {
-      margin: 5px;
+      margin: 0px 0;
       font-size: 14px;
     }
     
     .skills-section i {
       font-size: 20px;
     }
+
+    .skills-section img {
+        height: 10%;
+        margin: 0px, 0 0 0;
+      }
+
   }
   
   
@@ -206,7 +211,7 @@ body {
     color: #00ff7f;
   }
 
-  
+
   @media (min-width: 769px) {
     .card .links {
       justify-content: center;
