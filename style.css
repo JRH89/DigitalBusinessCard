@@ -1,6 +1,5 @@
 body {
     background-image: url("space2.jpg");
-    overflow: auto;
   }
   
   .card {
@@ -12,7 +11,7 @@ body {
     height: 70%;
     max-width: 600px;
     max-height: 500px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.85);
     color: #fff;
     padding: 40px;
     box-sizing: border-box;
@@ -22,7 +21,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    word-wrap: break-word; /* Add this line */
   }
   
   h1, h2 {
@@ -46,24 +44,15 @@ body {
   
   .card .links-container {
     background-color: #006400;
-    opacity: 0.7;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    opacity: 0.8;
   }
 
   .card .links a {
-    display: flex;
+    display: block;
     margin: 0px 0;
     font-size: 25px;
     color: #0b6b8b;
     text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 0px;
   }
   
   .card .links a:hover {
@@ -72,91 +61,35 @@ body {
   }
 
   @media (max-width: 768px) {
-    .card {
-      height: auto;
-      padding: 20px;
-    }
+    h1, h2 {
+        letter-spacing: 1px;
+      }
     
+    .card {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+    }
+  
     .card h1 {
+      font-size: 60px;
+    }
+  
+    .card h2 {
       font-size: 40px;
     }
-    
-    .card h2 {
-      font-size: 30px;
-    }
-    
+  
     .card .links a {
-      font-size: 20px;
+      font-size: 23px;
       margin: 5px 0;
     }
-    
-    .skills-section h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    
-    .skills-section li {
-      margin: 5px;
-      font-size: 14px;
-    }
-    
-    .skills-section i {
-      font-size: 30px;
-    }
   }
 
-  @media (max-height: 768px) {
-    .card {
-      height: auto;
-      padding: 0px;
-      
-    }
-    
-    .card h1 {
-      font-size: 30px;
-      margin: 0px;
-    }
-    
-    .card h2 {
-      font-size: 20px;
-      margin: 0px, 0;
-    }
-    
-    .card .links a {
-      font-size: 15px;
-      margin: 0px 0;
-    }
-    
-    .skills-section h3 {
-      font-size: 20px;
-      margin-bottom: 0px 0;
-    }
-    
-    .skills-section li {
-      margin: 0px 0;
-      font-size: 14px;
-    }
-    
-    .skills-section i {
-      font-size: 20px;
-    }
-
-    .skills-section img {
-        height: 10%;
-        margin: 0px, 0 0 0;
-      }
-
-  }
-  
-  
   .card .links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 40px 60px;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
   }
   
   .social-links i {
@@ -210,32 +143,12 @@ body {
   .skills-section li:hover {
     color: #00ff7f;
   }
-
-
-  @media (min-width: 769px) {
-    .card .links {
-      justify-content: center;
-      align-items: center;
-    }
-
-
-
-
-
-
-
-
-
-
-  }
   
   
   @media (max-width: 768px) {
     
     .card {
       text-align: center;
-      max-width: 90%;
-      
     }
 
     .card .links {
@@ -243,8 +156,6 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 20px 50px;
-        justify-content: center;
-        align-items: center;
       }
       
     .skills-section {
@@ -262,25 +173,10 @@ body {
   }
 
   .links {
-    justify-content: center;
-    align-items: center;
     border: 1px solid rgb(250, 252, 250, .3);
     box-shadow: 0px 0px 10px 0px rgb(253, 251, 251);
 
     border-radius: 15px;
     padding: 10px;
   }
-
- 
-
-  .links-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-
-
-  
   
