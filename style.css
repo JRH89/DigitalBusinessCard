@@ -181,4 +181,19 @@ body {
     border-radius: 15px;
     padding: 10px;
   }
+
+  @media screen and (orientation: landscape) {
+    .card h1 {
+      font-size: 3rem;
+      letter-spacing: 0.5rem;
+    }
+    .card h2 {
+      font-size: 2rem;
+      letter-spacing: 0.3rem;
+    }
+    .links {
+      font-size: 1.5rem;
+    }
+  }
+  
   
