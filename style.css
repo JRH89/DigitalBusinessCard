@@ -1,0 +1,182 @@
+body {
+    background-image: url("space2.jpg");
+  }
+  
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70%;
+    max-width: 600px;
+    max-height: 500px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 0px rgb(253, 251, 251);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1, h2 {
+    letter-spacing: 2px;
+  }
+  
+  .card h1 {
+    font-size: 60px;
+    color: #0b6b8b;
+    text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
+    margin-bottom:  -10px;
+    margin-top: -20px;
+  }
+  
+  .card h2 {
+    font-size: 40px;
+    color: #2f7e2f;
+    text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;
+    margin-bottom:  20px;
+  }
+  
+  .card .links-container {
+    background-color: #006400;
+    opacity: 0.8;
+  }
+
+  .card .links a {
+    display: block;
+    margin: 0px 0;
+    font-size: 25px;
+    color: #0b6b8b;
+    text-decoration: none;
+  }
+  
+  .card .links a:hover {
+    color: #2f7e2f; /* replace with your desired color */
+    text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;
+  }
+
+  @media (max-width: 768px) {
+    h1, h2 {
+        letter-spacing: 1px;
+      }
+    
+    .card {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+    }
+  
+    .card h1 {
+      font-size: 60px;
+    }
+  
+    .card h2 {
+      font-size: 40px;
+    }
+  
+    .card .links a {
+      font-size: 23px;
+      margin: 5px 0;
+    }
+  }
+
+  .card .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 40px 60px;
+  }
+  
+  .social-links i {
+    color: #2f7e2f; /* replace with your desired color */
+    text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
+
+  }
+  
+  .fa:hover {
+    color: #2f7e2f;
+    text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
+
+  }
+
+  .skills-section {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skills-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px #006400;
+  }
+  
+  .skills-section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skills-section li {
+    margin: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px #006400;
+  }
+  
+  .skills-section i {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 1px 1px #006400;
+  }
+  
+  .skills-section li:hover {
+    color: #00ff7f;
+  }
+  
+  
+  @media (max-width: 768px) {
+    
+    .card {
+      text-align: center;
+    }
+
+    .card .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px 50px;
+      }
+      
+    .skills-section {
+      flex-wrap: wrap;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .skills-section img {
+      width: 90%;
+    }
+  }
+
+  .links {
+    border: 1px solid rgb(250, 252, 250, .3);
+    box-shadow: 0px 0px 10px 0px rgb(253, 251, 251);
+
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
