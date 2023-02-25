@@ -21,6 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    word-wrap: break-word; /* Add this line */
   }
   
   h1, h2 {
@@ -62,7 +63,7 @@ body {
 
   @media (max-width: 768px) {
     h1, h2 {
-        letter-spacing: 1px;
+        letter-spacing: 0px;
       }
     
     .card {
@@ -72,15 +73,15 @@ body {
     }
   
     .card h1 {
-      font-size: 60px;
-    }
-  
-    .card h2 {
       font-size: 40px;
     }
   
+    .card h2 {
+      font-size: 30px;
+    }
+  
     .card .links a {
-      font-size: 23px;
+      font-size: 20px;
       margin: 5px 0;
     }
   }
