@@ -211,7 +211,7 @@ body {
 
 
 
-  @media (max-height: 500px) {
+  @media (max-height: 700px) {
     h1, h2 {
         letter-spacing: 0px;
         margin: 0, 0, 0, 0;
