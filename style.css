@@ -64,7 +64,7 @@ body {
     text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 300px) and (max-width: 768px) {
     h1, h2 {
         letter-spacing: 0px;
       }
