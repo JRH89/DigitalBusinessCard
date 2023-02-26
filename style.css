@@ -64,9 +64,26 @@ body {
     text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;
   }
 
+  
   @media (min-width: 300px) and (max-width: 768px) {
+      
     h1, h2 {
         letter-spacing: 0px;
+      }
+
+    .card h1 {
+        font-size: 80px;
+        color: #0b6b8b;
+        text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
+        margin-bottom:  -10px;
+        margin-top: -60px;
+      }
+      
+      .card h2 {
+        font-size: 40px;
+        color: #2f7e2f;
+        text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;
+        margin-bottom:  0px;
       }
       .card {
         text-align: center;
@@ -196,7 +213,7 @@ body {
     }
   
     .card .links a {
-      font-size: 40px;
+      font-size: 30px;
       margin: 5px 0;
     }
   }
@@ -207,7 +224,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 40px 60px;
+    grid-gap: 30px 50px;
   }
   
   .social-links i {
@@ -312,21 +329,28 @@ body {
   @media only screen and (max-width: 600px) {
     .card {
       width: 90%;
-      height: 90%;
+      height: 80%;
     }
     
     .card h1 {
-      font-size: 40px;
+      font-size: 60px;
     }
     
     .card h2 {
-      font-size: 30px;
+      font-size: 40px;
     }
     
     .card .links {
-      grid-gap: 20px 30px;
+      grid-gap: 20px 20px;
+    }
+
+    .card .links a {
+      font-size: 35px;
+      
     }
   }
+
+  
   
   @media only screen and (max-width: 400px) {
     .card {
