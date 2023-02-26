@@ -213,7 +213,11 @@ body {
 
 
 
-  @media (max-height: 400px) {
+
+
+
+
+  @media (min-height: 100px) and (max-height: 480px) {
     .card {
       display: grid;
       grid-template-columns: 2fr 1fr;
