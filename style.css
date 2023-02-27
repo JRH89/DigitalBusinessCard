@@ -10,7 +10,7 @@ body {
     transform: translate(-50%, -50%);
     width: 80%;
     height: 80%;
-    max-width: 1000px;
+    max-width: 900px;
     max-height: 90%;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -23,18 +23,21 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
     flex-wrap: wrap;
     margin:auto;
     
   }
+
   h1 {
     margin: auto;
+    
   }
 
 
   h1, h2 {
     letter-spacing: 1px;
+    text-align: center;
+    justify-content: center;
   }
   
   .card h1 {
@@ -151,7 +154,18 @@ body {
   
   .col {
     flex: 1;
-    padding: 10px;
+    
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    }
   }
   
 
