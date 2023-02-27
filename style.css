@@ -1,6 +1,8 @@
 body {
     background-image: url("space2.jpg");
     overflow: scroll;
+    margin: 0;
+    padding: 0;
   }
   
   .card {
@@ -141,6 +143,8 @@ body {
   .container {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
   
   @media (min-width: 768px) {
