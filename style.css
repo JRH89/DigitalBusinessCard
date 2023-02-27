@@ -20,8 +20,8 @@ body {
      0px rgb(253, 251, 251);
     border-radius: 15px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     word-wrap: break-word;
     flex-wrap: wrap;
@@ -35,7 +35,8 @@ body {
   
   .card h1 {
     font-size: 3em;
-    margin: aunto;
+    margin: auto;
+    margin-top: -20%;
     color: #0b6b8b;
     text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
     
@@ -50,7 +51,7 @@ body {
   }
 
   .card .links a {
-    display: block;
+    display: flex;
     margin: 0px 0;
     font-size: 25px;
     color: #0b6b8b;
