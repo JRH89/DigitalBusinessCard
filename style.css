@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    word-wrap: break-word;
+    
     flex-wrap: wrap;
     margin:auto;
     
@@ -38,9 +38,9 @@ body {
   }
   
   .card h1 {
-    font-size: 3em;
+    font-size: 2em;
     margin: auto;
-    margin-top: -20%;
+    
     color: #0b6b8b;
     text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
     
