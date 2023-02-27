@@ -138,7 +138,7 @@ body {
 
   .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   
   @media (min-width: 768px) {
@@ -175,3 +175,10 @@ body {
     }
   }
   
+  @media screen and (max-width: 480px) {
+    .card {
+
+      flex-direction: column;
+    }
+
+  }
