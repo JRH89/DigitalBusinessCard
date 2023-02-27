@@ -38,7 +38,7 @@ body {
   }
   
   .card h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin: auto;
     
     color: #0b6b8b;
@@ -114,11 +114,7 @@ body {
     text-shadow: 1px 1px #006400;
   }
   
-  .skills-section i {
-    font-size: 50px;
-    color: #fff;
-    text-shadow: 1px 1px #006400;
-  }
+
   
   .skills-section li:hover {
     color: #00ff7f;
@@ -137,7 +133,27 @@ body {
    
   }
 
-
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+  }
+  
+  .row {
+    display: flex;
+    flex: 1;
+  }
+  
+  .col {
+    flex: 1;
+    padding: 10px;
+  }
+  
 
   
 
