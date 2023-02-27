@@ -1,6 +1,6 @@
 body {
     background-image: url("space2.jpg");
-    overflow: hidden;
+    overflow: scroll;
   }
   
   .card {
