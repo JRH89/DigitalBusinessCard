@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Center the card and set its width */
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      /* Set the styles for the elements inside the card */
+      .element1, .element2 {
+        padding: 10px;
+      }
+
+      /* Flex row layout for widescreens */
+      @media (min-width: 768px) {
+        .card {
+          flex-direction: row;
+        }
+      }
+
+      /* Flex column layout for phones */
+      @media (max-width: 767px) {
+        .card {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="element1">Element 1</div>
+      <div class="element2">Element 2</div>
+    </div>
+  </body>
+</html>
