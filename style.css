@@ -150,6 +150,7 @@ body {
   @media (min-width: 768px) {
     .container {
       flex-direction: row;
+      justify-content: space-between;
     }
 
     .card {
