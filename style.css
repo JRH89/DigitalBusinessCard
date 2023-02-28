@@ -1,6 +1,6 @@
 body {
     background-image: url("space2.jpg");
-    overflow: scroll;
+    overflow: auto;
     margin: 0;
     padding: 0;
   }
