@@ -161,9 +161,9 @@ body {
       width: 90%;
     }
     .card h1 {
-        font-size: 3em;
+        font-size: 2.5em;
         margin: none;
-        word-wrap: break-word;
+        
       }
 
       .card h2 {
@@ -174,11 +174,12 @@ body {
       .card .links a {
         display: flex;
         margin: none;
-        font-size: 1.5em;
+        font-size: 2em;
         color: #0b6b8b;
         text-decoration: none;
         align-content: center;
         text-align: center;
+        flex: 1;
       }
 
       .card .links {
@@ -189,6 +190,7 @@ body {
         align-items: center;
         justify-content: center;
         margin: none;
+        flex:1;
       }
       
 
