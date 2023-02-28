@@ -187,6 +187,17 @@ body {
   /* not phones */
   @media (min-width: 768px) {
 
+    .card .links {
+    
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 20px 30px;
+      align-items: center;
+      justify-content: space-evenly;
+  
+    }
+
     .container {
       flex-direction: row;
       justify-content: space-between;
@@ -202,6 +213,35 @@ body {
       width: 85%;
 
     }
+
+    .links {
+    
+      justify-content:space-evenly;
+      align-items: center;
+      border: 1px solid rgba(216, 50, 50, 0.449);
+      box-shadow: 0px 0px 10px 0px rgb(250, 5, 5);
+      border-radius: 15px;
+      padding: auto;
+      margin: none;
+      width: 50%;
+      height:70%
+      
+    }
+
+    .card .links a {
+
+      display: grid;
+      margin: none;
+      font-size: 2em;
+      color: #214484;
+      text-decoration: none;
+      align-content:normal;
+      text-align:center;
+      justify-content:space-around;
+      margin-bottom: 15%;
+  
+    }
+  
 
   }
 
