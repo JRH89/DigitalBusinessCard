@@ -27,6 +27,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin:auto;
+    overflow: auto;
     
   }
 
@@ -161,14 +162,23 @@ body {
       flex-direction: column;
     }
     .card h1 {
-        font-size: 2em;
+        font-size: 2.25em;
+      
       }
 
       .card h2 {
-        font-size: 1.7em;
+        font-size: 2em;
       }
       
-
+      .card .links a {
+        display: flex;
+        margin: 0px 0;
+        font-size: 1em;
+        color: #0b6b8b;
+        text-decoration: none;
+        align-content: center;
+        text-align: center;
+      }
 
 
 
