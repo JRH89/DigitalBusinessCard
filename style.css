@@ -102,7 +102,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10%;
+    
   }
   
  
@@ -114,14 +114,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
-  .skills-section li {
-    margin: 10px;
-    font-size: 18px;
-    color: #fff;
-    text-shadow: 1px 1px #006400;
-  }
-  
+ 
 
   
   .skills-section li:hover {
@@ -175,7 +168,7 @@ body {
       .card .links a {
         display: flex;
         margin: 0px 0;
-        font-size: 1em;
+        font-size: 1.5em;
         color: #0b6b8b;
         text-decoration: none;
         align-content: center;
