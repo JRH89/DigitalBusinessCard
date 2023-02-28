@@ -160,6 +160,8 @@ body {
   @media (max-width: 767px) {
     .card {
       flex-direction: column;
+      justify-content:space-between;
+      
     }
     .card h1 {
         font-size: 2.25em;
