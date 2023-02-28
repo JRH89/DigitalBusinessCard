@@ -9,6 +9,6 @@ responsive to most popular screen sizes.
 <h2>Goal:</h2>
 My goal is have a landing page where users input their
 name, job title, up to 6 links, and 4-16 skill icons.
-Once the information is input, a digital business card and qr code arw generated.
+Once the information is input, a digital business card and qr code are generated.
 People won't need an account to see other people's cards when they scan the code,
 but in order to save cards, the app will be needed. 
