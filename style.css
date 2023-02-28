@@ -17,11 +17,11 @@ body {
     height: 85%;
     max-width: 800px;
     max-height: 90%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 20px;
     box-sizing: border-box;
-    border: 1px solid rgba(216, 50, 50, 0.449);
+    border: 1px solid rgba(216, 50, 50, 0.8);
     box-shadow: 0px 0px 10px 0px rgb(250, 5, 5);
     border-radius: 15px;
     display: flex;
@@ -34,15 +34,12 @@ body {
     
   }
 
-  
-
   h1 {
 
     margin-top: 0;
     margin-bottom: 0;
 
   }
-  
 
   h1, h2 {
 
@@ -58,7 +55,7 @@ body {
     font-size: 3em;
     margin: none;
     color: #214484;
-    text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
+    text-shadow: 0px 0px 5px #00bfff, 0px 0px 20px #00bfff, 0px 0px 5px #00bfff;
     
   }
   
@@ -77,6 +74,7 @@ body {
     margin: none;
     font-size: 1.5em;
     color: #214484;
+    text-shadow: 0px 0px 2px #00bfff, 0px 0px 20px #00bfff, 0px 0px 2px #00bfff;
     text-decoration: none;
     align-content: center;
     text-align: center;
@@ -90,7 +88,6 @@ body {
     text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;
 
   }
-
 
   .card .links {
     
@@ -149,7 +146,7 @@ body {
     
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(216, 50, 50, 0.449);
+    border: 1px solid rgba(216, 50, 50, 0.8);
     box-shadow: 0px 0px 10px 0px rgb(250, 5, 5);
     border-radius: 15px;
     padding: 10px;
@@ -215,7 +212,7 @@ body {
     
       justify-content:space-evenly;
       align-items: center;
-      border: 1px solid rgba(216, 50, 50, 0.449);
+      border: 1px solid rgba(216, 50, 50, 0.8);
       box-shadow: 0px 0px 10px 0px rgb(250, 5, 5);
       border-radius: 15px;
       padding: auto;
@@ -231,10 +228,11 @@ body {
       margin: none;
       font-size: 1.5em;
       color: #214484;
+      text-shadow: 0px 0px 2px #00bfff, 0px 0px 20px #00bfff, 0px 0px 2px #00bfff;
       text-decoration: none;
-      align-content:center;
-      text-align:center;
-      justify-content:center;
+      align-content: center;
+      text-align: center;
+      justify-content: center;
       margin-bottom: 15%;
   
     }
@@ -243,29 +241,30 @@ body {
   }
 
 
-
   /* phones */
 
   @media (max-width: 767px) {
     
     .card {
 
-      border: 1px solid rgba(216, 50, 50, 0.449);
+      border: 1px solid rgba(216, 50, 50, 0.8);
       box-shadow: 0px 0px 10px 0px rgb(250, 5, 5);
       flex-direction: column;
-      justify-content:space-evenly;
+      justify-content: space-evenly;
       margin: none;
       height: 80%;
       width: 80%;
       overflow: auto;
       padding: 0;
+
     }
 
     .card h1 {
 
         font-size: 3em;
         margin: none;
-        
+        word-wrap: break-word;
+            
       }
 
       .card h2 {
@@ -280,6 +279,7 @@ body {
         margin: none;
         font-size: 1.5em;
         color: #214484;
+        text-shadow: 0px 0px 2px #00bfff, 0px 0px 20px #00bfff, 0px 0px 2px #00bfff;
         text-decoration: none;
         align-content: center;
         text-align: center;
