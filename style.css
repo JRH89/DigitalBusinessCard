@@ -157,6 +157,8 @@ body {
       flex-direction: column;
       justify-content:baseline;
       margin: none;
+      height: 90%;
+      width: 90%;
     }
     .card h1 {
         font-size: 3em;
@@ -171,7 +173,7 @@ body {
       
       .card .links a {
         display: flex;
-        margin: 0px 0;
+        margin: none;
         font-size: 1.5em;
         color: #0b6b8b;
         text-decoration: none;
