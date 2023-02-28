@@ -254,6 +254,7 @@ body {
       width: 80%;
       overflow: auto;
       padding: 0;
+      word-wrap: break-word;
 
     }
 
