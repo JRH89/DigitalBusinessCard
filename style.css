@@ -47,6 +47,7 @@ body {
     text-align: center;
     justify-content: center;
     margin: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   }
   
@@ -79,6 +80,7 @@ body {
     align-content: center;
     text-align: center;
     justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   }
   
@@ -204,7 +206,8 @@ body {
       margin: none;
       height: 85%;
       width: 85%;
-
+      border: 1px solid rgba(216, 50, 50, 0.8);
+      box-shadow: 0px 0px 10px 0px rgb(250, 5, 5);
     }
 
     .links {
@@ -243,15 +246,24 @@ body {
 
   @media (max-width: 767px) {
     
+    
+    .links {
+    
+      
+      border: 2px solid rgba(216, 50, 50, 0.8);
+      box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
+    
+      
+    }
     .card {
 
-      border: 1px solid rgba(216, 50, 50, 0.8);
-      box-shadow: 0px 0px 10px 0px rgb(250, 5, 5);
+      border: 2px solid rgba(216, 50, 50, 0.8);
+      box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
       flex-direction: column;
       justify-content: space-evenly;
       margin: none;
       height: 80%;
-      width: 80%;
+      width: 85%;
       overflow: auto;
       padding: 0;
       word-wrap: break-word;
@@ -273,8 +285,9 @@ body {
       }
       
       .card .links a {
-
+        
         display: flex;
+        flex-shrink: 1;
         margin: none;
         font-size: 1.5em;
         color: #214484;
@@ -291,7 +304,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: 30px 40px;
+        grid-gap: 40px 40px;
         align-items: center;
         justify-content: center;
         margin: none;
