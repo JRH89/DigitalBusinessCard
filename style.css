@@ -184,7 +184,8 @@ body {
 
   }
 
-  /* not phones */
+  /* ...not phones, TVs, PCs... */
+
   @media (min-width: 768px) {
 
     .card .links {
@@ -192,9 +193,9 @@ body {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      grid-gap: 20px 30px;
+      grid-gap: 10px 20px;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content:space-evenly;
   
     }
 
@@ -207,7 +208,7 @@ body {
     .card {
 
       flex-direction: row;
-      justify-content:space-between;
+      justify-content:space space-between;
       margin: none;
       height: 85%;
       width: 85%;
@@ -232,7 +233,7 @@ body {
 
       display: flex;
       margin: none;
-      font-size: 2em;
+      font-size: 1.5em;
       color: #214484;
       text-decoration: none;
       align-content:center;
@@ -248,6 +249,7 @@ body {
 
 
   /* phones */
+
   @media (max-width: 767px) {
     
     .card {
