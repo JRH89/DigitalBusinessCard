@@ -1,45 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Business Card</title>
-    <meta name="description" content="game developer, software developer, gameplay programmer, python, javascript, unreal engine, unity"/>
-    <meta property="og:image" content="Screenshot_20230227-202506-791.png"/>
-    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
   
-  </head>
 
-  <body>
-    
-    <div class="card">   
-      <div class="skills-section">
+    <style>
+
+        * {
+        box-sizing: border-box;
+        }
+        body {  
+        background-image: url("space2.jpg");
+        margin:none;
+        padding: none;
+        }
+
+        input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        color: #214484;
+        text-shadow: 0px 0px 2px #00bfff, 0px 0px 2px #00bfff, 0px 0px 2px #00bfff;
+        border-radius: 10px;
+        resize: vertical;
+        background-color: #050505ac;
+        }
+
+        label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        color: #2f7e2f; 
+        text-shadow: 0px 0px 2px #00ff7f, 0px 0px 2px #00ff7f, 0px 0px 2px #00ff7f;
+        font-size: 1.5em;
+        }
+
+        input[type=submit] {
+        background-color: #fa130377;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        border: 2px solid rgba(216, 50, 50, 0.8);
+        }
+
+        input[type=submit]:hover {
+        background-color: #fa1403;
+        box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
+        }
+
         
-        <h1>Jared Hooker</h1>
-        <h2>Software Developer</h2>    
-        <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=unreal,unity,blender,py,css,js,nodejs,github&perline=4">
-        </a>
+        .container {
+        border-radius: 15px;
+        background-color: #050505ac;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        height: 85%;
+        max-width: 800px;
+        max-height: 90%;
+        border: 2px solid rgba(216, 50, 50, 0.8);
+        box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+    
+        .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+        }
 
-      </div>
-     
-      <br>
-      
-      <div class="links">
+        footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        }
 
-        <a href="https://jaredsportfolio.netlify.app"><i class="fa fa-globe"></i>Portfolio</a>
-        <a href="https://github.com/jrh89"><i class="fa fa-github"></i>GitHub</a>
-        <a href="https://linkedin.com/in/jaredhooker"><i class="fa fa-linkedin"></i>LinkedIn</a>
-        <a href="https://twitter.com/GameDevJared89"><i class="fa fa-twitter"></i> Twitter</a>
-        <a href="https://play.google.com/store/apps/details?id=weather.yellowsky"><i class="fa fa-google"></i>Play Store</a>
-        <a href="mailto:gamedevjared@gmail.com"><i class="fa fa-envelope"></i> Email</a>
-       
-      </div>      
-    </div> 
-       
-  </body>
+        .col-75 {
+        float: right;
+        width: 75%;
+        margin-top: 6px;
+        }
+
+        .col-26 {
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        text-align: center;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+        .col-25, .col-75, .col-26, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        }}
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        
+            <div class="col-26">
+              <label for="Header">Enter your info...</label>
+            </div>
+        <form action="/action_page.php">
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="name" name="firstname" placeholder="First and Last...">
+            
+        </div> 
+    </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="title">Title</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="job" name="job" placeholder="Your job title..">
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Links</label>
+    </div>
+    
+    <div class="col-75">
+        <input type="text" id="l1" name="link1" placeholder="HTTPS://...">
+    </div>
+    <div class="col-75">
+        <input type="text" id="l2" name="link2" placeholder="HTTPS://...">
+    </div>
+    <div class="col-75">
+        <input type="text" id="l3" name="link3" placeholder="HTTPS://...">
+    </div>
+    <div class="col-75">
+        <input type="text" id="l4" name="link4" placeholder="HTTPS://...">
+    </div>
+    <div class="col-75">
+        <input type="text" id="l5" name="link5" placeholder="HTTPS://...">
+    </div>
+    <div class="col-75">
+        <input type="text" id="l6" name="link6" placeholder="HTTPS://...">
+    </div>
+    
+
+  </div>
+  
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+ </form>
+</div>
+ 
+</body>
+<footer>
+    <p style="text-align: center; color: rgba(128, 128, 128, 0.626)">
+        Hooker Hill Studios © 2023
+    </p>
+
+ </footer>
+
 </html>
+
+
