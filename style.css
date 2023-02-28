@@ -34,6 +34,15 @@ body {
     
   }
 
+  .card img {
+
+    margin-top: 30%;
+    width: 100%;
+    
+    
+
+  }
+
   h1 {
 
     margin-top: 0;
@@ -208,7 +217,7 @@ body {
     .card {
 
       flex-direction: row;
-      justify-content:space space-between;
+      justify-content:space-between;
       margin: none;
       height: 85%;
       width: 85%;
@@ -262,12 +271,12 @@ body {
       height: 85%;
       width: 85%;
       overflow: auto;
-      
+      padding: 0;
     }
 
     .card h1 {
 
-        font-size: 2.5em;
+        font-size: 3em;
         margin: none;
         
       }
