@@ -153,7 +153,7 @@ body {
     }
 
     .card {
-      flex-direction: column;
+      flex-direction: row;
       justify-content:center;
       margin: none;
       height: 85%;
