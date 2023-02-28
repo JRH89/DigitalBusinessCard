@@ -1,8 +1,8 @@
 body {
     background-image: url("space2.jpg");
     overflow: auto;
-    margin: 0;
-    padding: 0;
+    margin:none;
+    padding: none;
   }
   
   .card {
@@ -10,8 +10,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
     max-width: 1000px;
     max-height: 90%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -25,27 +25,24 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    margin:auto;
+    flex-wrap:nowrap;
+    margin:none;
     overflow: auto;
     
   }
 
-  h1 {
-    margin: auto;
-    
-  }
-
+  
 
   h1, h2 {
     letter-spacing: 0px;
     text-align: center;
     justify-content: center;
+    margin: none;
   }
   
   .card h1 {
     font-size: 3em;
-    margin: auto;
+    margin: none;
     
     color: #0b6b8b;
     text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
@@ -54,15 +51,15 @@ body {
   
   .card h2 {
     font-size: 2em;
-    margin:auto;
+    margin:none;
     color: #2f7e2f;
     text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;
-    margin-bottom:  0px;
+    
   }
 
   .card .links a {
     display: flex;
-    margin: 0px 0;
+    margin: none;
     font-size: 1.5em;
     color: #0b6b8b;
     text-decoration: none;
@@ -87,6 +84,7 @@ body {
   .social-links i {
     color: #2f7e2f; /* replace with your desired color */
     text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
+    margin: none;
 
   }
   
@@ -97,11 +95,12 @@ body {
   }
 
   .skills-section {
-    margin-top: 10%;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: none;
     
   }
   
@@ -113,6 +112,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: none;
+    
   }
  
 
@@ -131,14 +132,15 @@ body {
     box-shadow: 0px 0px 10px 0px rgb(250, 5, 5);
     border-radius: 15px;
     padding: 10px;
+    margin: none;
    
   }
 
   .container {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    margin:none;
+    padding: none;
   }
   
   @media (min-width: 768px) {
@@ -153,16 +155,18 @@ body {
   @media (max-width: 767px) {
     .card {
       flex-direction: column;
-      justify-content:space-between;
-      
+      justify-content:baseline;
+      margin: none;
     }
     .card h1 {
-        font-size: 2.25em;
-      
+        font-size: 3em;
+        margin: none;
+        word-wrap: break-word;
       }
 
       .card h2 {
         font-size: 2em;
+        margin: none;
       }
       
       .card .links a {
@@ -175,8 +179,16 @@ body {
         text-align: center;
       }
 
-
-
+      .card .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 30px 40px;
+        align-items: center;
+        justify-content: center;
+        margin: none;
+      }
+      
 
   }
 
