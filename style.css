@@ -176,7 +176,6 @@ body {
     
   }
   
-
   /* ...not phones, TVs, PCs... */
 
   @media (min-width: 768px) {
@@ -239,7 +238,6 @@ body {
   
 
   }
-
 
   /* phones */
 
@@ -307,5 +305,3 @@ body {
       }
 
   }
-
- 
