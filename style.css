@@ -179,12 +179,6 @@ body {
     
   }
   
-  .container {
-
-    display: flex;
-    flex-direction: column;
-
-  }
 
   /* ...not phones, TVs, PCs... */
 
@@ -253,12 +247,7 @@ body {
   /* phones */
 
   @media (max-width: 767px) {
-      .card img {
-
-      margin-top: 30%;
-      width: 100%;
-
-    }
+    
     .card {
 
       border: 1px solid rgba(216, 50, 50, 0.449);
