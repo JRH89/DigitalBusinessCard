@@ -1,6 +1,6 @@
 <h1>Digital Business Card</h1>
 <img SRC="Screenshot_20230227-202506-791.png">
-<img scr="Screenshot_20230227-202428-890.png">
+<img src="Screenshot_20230227-202428-890.png">
 <h2>Summary:</h2>
 An app I am creating that will allow you to easily share your contact information and store others'
 info with a single link or qr code.
