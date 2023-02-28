@@ -1,11 +1,14 @@
 body {
+    
     background-image: url("space2.jpg");
     overflow: auto;
     margin:none;
     padding: none;
+
   }
   
   .card {
+   
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,36 +35,42 @@ body {
   }
 
   h1 {
+
     margin-top: 0;
     margin-bottom: 0;
+
   }
   
 
   h1, h2 {
+
     letter-spacing: 0px;
     text-align: center;
     justify-content: center;
     margin: none;
+
   }
   
   .card h1 {
+
     font-size: 3em;
     margin: none;
-    
     color: #214484;
     text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
     
   }
   
   .card h2 {
+
     font-size: 2em;
     margin:none;
     color: #277527;
     text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;
-    
+
   }
 
   .card .links a {
+
     display: flex;
     margin: none;
     font-size: 1.5em;
@@ -70,30 +79,38 @@ body {
     align-content: center;
     text-align: center;
     justify-content: center;
+
   }
   
   .card .links a:hover {
+
     color: #2f7e2f; 
     text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;
+
   }
 
+
   .card .links {
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px 40px;
     align-items: center;
     justify-content: center;
+
   }
   
   .social-links i {
-    color: #2f7e2f; /* replace with your desired color */
+    
+    color: #2f7e2f;
     text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
     margin: none;
 
   }
   
   .fa:hover {
+    
     color: #2f7e2f;
     text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
 
@@ -109,9 +126,8 @@ body {
     
   }
   
- 
-  
   .skills-section ul {
+    
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -121,16 +137,14 @@ body {
     
   }
  
-
-  
   .skills-section li:hover {
+    
     color: #00ff7f;
+
   }
   
-  
- 
-
   .links {
+    
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(216, 50, 50, 0.449);
@@ -143,37 +157,61 @@ body {
   }
 
   .container {
+
     display: flex;
     flex-direction: column;
     margin:none;
     padding: none;
+
+  }
+
+  .row {
+
+    display: flex;
+    flex: 1;
+  }
+
+  .col {
+
+    flex: 1;
+    
   }
   
+  .container {
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  /* not phones */
   @media (min-width: 768px) {
+
     .container {
       flex-direction: row;
       justify-content: space-between;
     }
 
+
     .card {
+
       flex-direction: row;
       justify-content:space-between;
       margin: none;
       height: 85%;
       width: 85%;
-      
+
     }
+
   }
 
 
 
-  /* Flex column layout for phones */
+  /* phones */
   @media (max-width: 767px) {
     
-   
-
-    
     .card {
+
       border: 1px solid rgba(216, 50, 50, 0.449);
       box-shadow: 0px 0px 10px 0px rgb(250, 5, 5);
       flex-direction: column;
@@ -184,19 +222,22 @@ body {
       overflow: auto;
       
     }
+
     .card h1 {
+
         font-size: 2.5em;
         margin: none;
-        
         
       }
 
       .card h2 {
+
         font-size: 2em;
         margin: none;
       }
       
       .card .links a {
+
         display: flex;
         margin: none;
         font-size: 1.5em;
@@ -209,6 +250,7 @@ body {
       }
 
       .card .links {
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -220,31 +262,12 @@ body {
       }
 
       h1 {
+
         margin-top: 0;
         margin-bottom: 0;
+
       }
-      
-
 
   }
-
-
-
- 
-  .row {
-    display: flex;
-    flex: 1;
-  }
-  
-  .col {
-    flex: 1;
-    
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-  
 
  
