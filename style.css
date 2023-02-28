@@ -230,14 +230,14 @@ body {
 
     .card .links a {
 
-      display: grid;
+      display: flex;
       margin: none;
       font-size: 2em;
       color: #214484;
       text-decoration: none;
-      align-content:normal;
+      align-content:center;
       text-align:center;
-      justify-content:space-around;
+      justify-content:center;
       margin-bottom: 15%;
   
     }
