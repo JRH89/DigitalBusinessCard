@@ -34,14 +34,7 @@ body {
     
   }
 
-  .card img {
-
-    margin-top: 30%;
-    width: 100%;
-    
-    
-
-  }
+  
 
   h1 {
 
@@ -260,7 +253,12 @@ body {
   /* phones */
 
   @media (max-width: 767px) {
-    
+      .card img {
+
+      margin-top: 30%;
+      width: 100%;
+
+    }
     .card {
 
       border: 1px solid rgba(216, 50, 50, 0.449);
@@ -268,8 +266,8 @@ body {
       flex-direction: column;
       justify-content:space-evenly;
       margin: none;
-      height: 85%;
-      width: 85%;
+      height: 80%;
+      width: 80%;
       overflow: auto;
       padding: 0;
     }
