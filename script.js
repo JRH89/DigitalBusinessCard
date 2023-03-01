@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     // Send a POST request to the Netlify function
-    fetch("submit-form.js", {
+    fetch("/.netlify/functions/index", {
+
       method: "POST",
       body: JSON.stringify(data)
     })
