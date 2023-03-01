@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
       // Set the values in the query string of the redirect URL
       var redirectUrl = "https://jrh89.github.io/DigitalBusinessCard/profile.html?" +
-        "name=" + encodeURIComponent(name1) +
-        "&job=" + encodeURIComponent(job1) +
+        "name1=" + encodeURIComponent(name1) +
+        "&job1=" + encodeURIComponent(job1) +
         "&link1=" + encodeURIComponent(link1) +
         "&link2=" + encodeURIComponent(link2) +
         "&link3=" + encodeURIComponent(link3) +
