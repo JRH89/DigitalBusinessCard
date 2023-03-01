@@ -17,21 +17,37 @@ document.addEventListener('DOMContentLoaded', function() {
     var link5 = document.getElementById("link5").value;
     var link6 = document.getElementById("link6").value;
 
-    // Construct the URL with the form data as query parameters
-    var url = "profile.html" + "?" +
-              "name=" + encodeURIComponent(name1) + "&" +
-              "job=" + encodeURIComponent(job1) + "&" +
-              "link1=" + encodeURIComponent(link1) + "&" +
-              "link2=" + encodeURIComponent(link2) + "&" +
-              "link3=" + encodeURIComponent(link3) + "&" +
-              "link4=" + encodeURIComponent(link4) + "&" +
-              "link5=" + encodeURIComponent(link5) + "&" +
-              "link6=" + encodeURIComponent(link6);
+    // Construct the JSON object with the form data
+    var formData = {
+      name: name1,
+      job: job1,
+      links: [
+        link1,
+        link2,
+        link3,
+        link4,
+        link5,
+        link6
+      ]
+    };
 
-    // Debugging: log the constructed URL to the console
-    console.log("Redirecting to: " + url);
+    // Debugging: log the constructed object to the console
+    console.log(formData);
 
-    // Redirect the user to the profile page with the query parameters in the URL
-    window.location.href = url;
+    // Send the JSON object to the server
+    fetch('/profile', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => {
+      // Redirect the user to the profile page
+      window.location.href = "/profile.html";
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
   });
 });
