@@ -4,9 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Add a submit event listener to the form
     form.addEventListener("submit", function(event) {
-      // Prevent the form from submitting normally
-      event.preventDefault();
-  
       // Get the user input
       var name1 = document.getElementById("name2").value;
       var job1 = document.getElementById("job2").value;
@@ -16,21 +13,24 @@ document.addEventListener('DOMContentLoaded', function() {
       var link4 = document.getElementById("link4").value;
       var link5 = document.getElementById("link5").value;
       var link6 = document.getElementById("link6").value;
-     
-      
-
-      // Populate the placeholders with the user input
-      document.getElementById("name1").innerText = name1;
-      document.getElementById("job1").innerText = job1;
-      document.getElementById("l1").href = link1;
-      document.getElementById("l2").href = link2;
-      document.getElementById("l3").href = link3;
-      document.getElementById("l4").href = link4;
-      document.getElementById("l5").href = link5;
-      document.getElementById("l6").href = link6;
-     
+  
+      // Set the values in the query string of the redirect URL
+      var redirectUrl = "/profile.html?" +
+        "name=" + encodeURIComponent(name1) +
+        "&job=" + encodeURIComponent(job1) +
+        "&link1=" + encodeURIComponent(link1) +
+        "&link2=" + encodeURIComponent(link2) +
+        "&link3=" + encodeURIComponent(link3) +
+        "&link4=" + encodeURIComponent(link4) +
+        "&link5=" + encodeURIComponent(link5) +
+        "&link6=" + encodeURIComponent(link6);
   
       // Redirect the user to the profile page
-      window.location.href = "/profile.html";
+      window.location.href = redirectUrl;
+  
+      // Prevent the form from submitting normally
+      event.preventDefault();
     });
   });
+  
+  
