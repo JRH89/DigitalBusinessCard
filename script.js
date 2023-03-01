@@ -17,14 +17,20 @@ form.addEventListener("submit", function(event) {
   var link6 = document.getElementById("link6").value;
 
   // Populate the placeholders with the user input
-  document.getElementById("name1").innerHTML = name1;
-  document.getElementById("job1").innerHTML = job1;
-  document.getElementById("l1").innerHTML = link1;
-  document.getElementById("l2").innerHTML = link2;
-  document.getElementById("l3").innerHTML = link3;
-  document.getElementById("l4").innerHTML = link4;
-  document.getElementById("l5").innerHTML = link5;
-  document.getElementById("l6").innerHTML = link6;
+  document.getElementById("name1").value = name1;
+  document.getElementById("job1").value = job1;
+  document.getElementById("l1").href = link1;
+  document.getElementById("l1").value = link1 || '';
+  document.getElementById("l2").href = link2;
+  document.getElementById("l2").value = link2 || '';
+  document.getElementById("l3").href = link3;
+  document.getElementById("l3").value = link3 || '';
+  document.getElementById("l4").href = link4;
+  document.getElementById("l4").value = link4 || '';
+  document.getElementById("l5").href = link5;
+  document.getElementById("l5").value = link5 || '';
+  document.getElementById("l6").href = link6;
+  document.getElementById("l6").value = link6 || '';
 
   // Redirect the user to the profile page
   window.location.href = "https://jrh89.github.io/DigitalBusinessCard/profile.html";
