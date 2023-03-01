@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var link6 = document.getElementById("link6").value;
   
       // Set the values in the query string of the redirect URL
-      var redirectUrl = "/profile.html?" +
+      var redirectUrl = "https://jrh89.github.io/DigitalBusinessCard/profile.html?" +
         "name=" + encodeURIComponent(name1) +
         "&job=" + encodeURIComponent(job1) +
         "&link1=" + encodeURIComponent(link1) +
