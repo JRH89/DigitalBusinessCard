@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
       var link6 = document.getElementById("link6").value;
   
       // Populate the placeholders with the user input
-      document.getElementById("name1").innerText = name1;
-      document.getElementById("job1").innerText = job1;
+      document.getElementById("name2").innerText = name1;
+      document.getElementById("job2").innerText = job1;
       document.getElementById("l1").href = link1;
       document.getElementById("l1").value = link1 || '';
       document.getElementById("l2").href = link2;
