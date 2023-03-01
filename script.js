@@ -16,23 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
       var link4 = document.getElementById("link4").value;
       var link5 = document.getElementById("link5").value;
       var link6 = document.getElementById("link6").value;
-      let l1 = document.getElementById("l1");
-      let l2 = document.getElementById("l2");
-      let l3 = document.getElementById("l3");
-      let l4 = document.getElementById("l4");
-      let l5 = document.getElementById("l5");
-      let l6 = document.getElementById("l6");
+     
       
 
       // Populate the placeholders with the user input
-      document.getElementById("name2").innerText = name1;
-      document.getElementById("job2").innerText = job1;
-      l1.href = link1 || '';
-      l2.href = link2 || '';
-      l3.href = link3 || '';
-      l4.href = link4 || '';
-      l5.href = link5 || '';
-      l6.href = link6 || '';
+      document.getElementById("name1").innerText = name1;
+      document.getElementById("job1").innerText = job1;
+      document.getElementById("l1").href = link1;
+      document.getElementById("l2").href = link2;
+      document.getElementById("l3").href = link3;
+      document.getElementById("l4").href = link4;
+      document.getElementById("l5").href = link5;
+      document.getElementById("l6").href = link6;
+     
   
       // Redirect the user to the profile page
       window.location.href = "/profile.html";
