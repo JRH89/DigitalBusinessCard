@@ -40,6 +40,19 @@
        
       </div>      
     </div> 
-  <script type="text/javascript" src="script2.js"></script>  
+    <script>
+    // Get profile data from localStorage
+    var profileData = JSON.parse(localStorage.getItem("profileData"));
+    
+    // Update page content with profile data
+    document.getElementById("name1").innerHTML = profileData.name2;
+    document.getElementById("job1").innerHTML = profileData.job2;
+    document.getElementById("l1").href = profileData.link1;
+    document.getElementById("l2").href = profileData.link2;
+    document.getElementById("l3").href = profileData.link3;
+    document.getElementById("l4").href = profileData.link4;
+    document.getElementById("l5").href = profileData.link6;
+    document.getElementById("l6").href = "mailto:" + profileData.link6;
+    </script>
   </body>
 </html>
