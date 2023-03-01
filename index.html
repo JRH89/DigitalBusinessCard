@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-  
-
+    <meta name="description" content="game developer, software developer, gameplay programmer, python, javascript, unreal engine, unity"/>
+    <meta property="og:image" content="Screenshot_20230227-202506-791.png"/>
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
     <style>
 
         * {
@@ -71,9 +72,11 @@
         box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        overflow: auto;
+        justify-content: flex-start;
+        align-items:center;
+        overflow-y: auto;
+        
+        
         }
     
         .col-25 {
@@ -108,15 +111,13 @@
         border-radius: 15px;
 
         }
-
-        /* Clear floats after the columns */
+        
         .row:after {
         content: "";
         display: table;
         clear: both;
         }
 
-        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 600px) {
         .col-25, .col-75, .col-26, input[type=submit] {
         width: 100%;
@@ -129,21 +130,20 @@
 
 <body>
 
-    <div class="container">
+  <div class="container">
         
-            <div class="col-26">
-              <label for="Header">Enter your info...</label>
-            </div>
-        <form action="/action_page.php">
-        <div class="row">
-            <div class="col-25">
-                <label for="fname">Name</label>
-            </div>
-            <div class="col-75">
-                <input type="text" id="name" name="firstname" placeholder="First and Last...">
-            
-        </div> 
+    <div class="col-26">
+      <label for="Header">Enter your info...</label>
     </div>
+    <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+    <div class="col-75">
+      <input type="text" id="name" name="firstname" placeholder="First and Last...">         
+    </div> 
+  </div>
   
   <div class="row">
     <div class="col-25">
@@ -178,10 +178,10 @@
         <input type="text" id="l6" name="link6" placeholder="HTTPS://...">
     </div>
     
-
   </div>
   
   <br>
+  
   <div class="row">
     <input type="submit" value="Submit">
   </div>
