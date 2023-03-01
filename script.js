@@ -16,7 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
       var link4 = document.getElementById("link4").value;
       var link5 = document.getElementById("link5").value;
       var link6 = document.getElementById("link6").value;
-  
+      let l1 = document.getElementById("l1");
+      let l2 = document.getElementById("l2");
+      let l3 = document.getElementById("l3");
+      let l4 = document.getElementById("l4");
+      let l5 = document.getElementById("l5");
+      let l6 = document.getElementById("l6");
+      
+
       // Populate the placeholders with the user input
       document.getElementById("name2").innerText = name1;
       document.getElementById("job2").innerText = job1;
