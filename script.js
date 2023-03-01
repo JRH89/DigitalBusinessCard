@@ -33,5 +33,5 @@ form.addEventListener("submit", function(event) {
   document.getElementById("l6").value = link6 || '';
 
   // Redirect the user to the profile page
-  window.location.href = "https://jrh89.github.io/DigitalBusinessCard/profile.html";
+  window.location.href = "/profile.html";
 });
