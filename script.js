@@ -20,17 +20,17 @@ document.addEventListener('DOMContentLoaded', function() {
       // Populate the placeholders with the user input
       document.getElementById("name2").innerText = name1;
       document.getElementById("job2").innerText = job1;
-      document.getElementById("link1").href = link1;
+      document.getElementById("link1").href = l1;
       document.getElementById("l1").value = link1 || '';
-      document.getElementById("link2").href = link2;
+      document.getElementById("link2").href = l2;
       document.getElementById("l2").value = link2 || '';
-      document.getElementById("link3").href = link3;
+      document.getElementById("link3").href = l3;
       document.getElementById("l3").value = link3 || '';
-      document.getElementById("link4").href = link4;
+      document.getElementById("link4").href = l4;
       document.getElementById("l4").value = link4 || '';
-      document.getElementById("link5").href = link5;
+      document.getElementById("link5").href = l5;
       document.getElementById("l5").value = link5 || '';
-      document.getElementById("link6").href = link6;
+      document.getElementById("link6").href = l6;
       document.getElementById("l6").value = link6 || '';
   
       // Redirect the user to the profile page
