@@ -7,10 +7,13 @@
     <meta name="description" content="game developer, software developer, gameplay programmer, python, javascript, unreal engine, unity"/>
     <meta property="og:image" content="Screenshot_20230227-202506-791.png"/>
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+    
     <style>
 
         * {
         box-sizing: border-box;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
         }
         body {  
         background-image: url("space2.jpg");
@@ -109,8 +112,9 @@
         border: 2px solid #214484b8;
         box-shadow: 0px 0px 10px 2px #00bfff;
         border-radius: 15px;
-
         }
+
+        
         
         .row:after {
         content: "";
@@ -133,15 +137,15 @@
   <div class="container">
         
     <div class="col-26">
-      <label for="Header">Enter your info...</label>
+      <label for="Header">Enter your info</label>
     </div>
-    <form action="/action_page.php">
+    <form action="profile.html" method="post" id="my-form">
     <div class="row">
       <div class="col-25">
         <label for="fname">Name</label>
       </div>
     <div class="col-75">
-      <input type="text" id="name" name="firstname" placeholder="First and Last...">         
+      <input type="text" id="name2" name="firstname" placeholder="First and Last...">         
     </div> 
   </div>
   
@@ -150,7 +154,7 @@
       <label for="title">Title</label>
     </div>
     <div class="col-75">
-      <input type="text" id="job" name="job" placeholder="Your job title..">
+      <input type="text" id="job2" name="job" placeholder="Your job title..">
     </div>
   </div>
   
@@ -160,34 +164,35 @@
     </div>
     
     <div class="col-75">
-        <input type="text" id="l1" name="link1" placeholder="HTTPS://...">
+        <input type="text" id="link1" name="link1" placeholder="Portfolio">
     </div>
     <div class="col-75">
-        <input type="text" id="l2" name="link2" placeholder="HTTPS://...">
+        <input type="text" id="link2" name="link2" placeholder="Github">
     </div>
     <div class="col-75">
-        <input type="text" id="l3" name="link3" placeholder="HTTPS://...">
+        <input type="text" id="link3" name="link3" placeholder="LinkedIn">
     </div>
     <div class="col-75">
-        <input type="text" id="l4" name="link4" placeholder="HTTPS://...">
+        <input type="text" id="link4" name="link4" placeholder="Twitter">
     </div>
     <div class="col-75">
-        <input type="text" id="l5" name="link5" placeholder="HTTPS://...">
+        <input type="text" id="link5" name="link5" placeholder="Reddit">
     </div>
     <div class="col-75">
-        <input type="text" id="l6" name="link6" placeholder="HTTPS://...">
+        <input type="text" id="link6" name="link6" placeholder="E-mail">
     </div>
     
   </div>
   
   <br>
-  
+
   <div class="row">
     <input type="submit" value="Submit">
   </div>
  </form>
 </div>
- 
+<script src="script.js"></script>
+
 </body>
 <footer>
     <p style="text-align: center; color: rgba(128, 128, 128, 0.626)">
