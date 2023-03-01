@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Get the form element
     var form = document.getElementById("my-form");
-  
+    
     // Add a submit event listener to the form
     form.addEventListener("submit", function(event) {
+      event.preventDefault();
       // Get the user input
       var name1 = document.getElementById("name2").value;
       var job1 = document.getElementById("job2").value;
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
       window.location.href = redirectUrl;
   
       // Prevent the form from submitting normally
-      event.preventDefault();
+      
     });
   });
   
