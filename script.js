@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
   // Get the form element
   var form = document.getElementById("my-form");
 
@@ -17,37 +17,30 @@ document.addEventListener('DOMContentLoaded', function() {
     var link5 = document.getElementById("link5").value;
     var link6 = document.getElementById("link6").value;
 
-    // Construct the JSON object with the form data
-    var formData = {
+    // Construct the form data object
+    var data = {
       name: name1,
       job: job1,
-      links: [
-        link1,
-        link2,
-        link3,
-        link4,
-        link5,
-        link6
-      ]
+      link1: link1,
+      link2: link2,
+      link3: link3,
+      link4: link4,
+      link5: link5,
+      link6: link6
     };
 
-    // Debugging: log the constructed object to the console
-    console.log(formData);
-
-    // Send the JSON object to the server
-    fetch('/profile', {
-      method: 'POST',
-      body: JSON.stringify(formData),
-      headers: {
-        'Content-Type': 'application/json'
-      }
+    // Send a POST request to the Netlify function
+    fetch("/.netlify/functions/submit-form", {
+      method: "POST",
+      body: JSON.stringify(data)
     })
-    .then(response => {
-      // Redirect the user to the profile page
-      window.location.href = "/profile.html";
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
+      .then(function(response) {
+        // Handle the response
+        console.log("Data updated successfully.");
+      })
+      .catch(function(error) {
+        // Handle the error
+        console.error(error);
+      });
   });
 });
