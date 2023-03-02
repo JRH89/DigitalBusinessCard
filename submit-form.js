@@ -8,8 +8,8 @@ exports.handler = async function(event, context) {
       const jsonData = JSON.parse(fileContents);
   
       // Update the JSON data with the form data
-      jsonData.name = data.name;
-      jsonData.job = data.job;
+      jsonData.name = data.name2;
+      jsonData.job = data.job2;
       jsonData.links = {
         link1: data.link1,
         link2: data.link2,
