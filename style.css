@@ -21,14 +21,14 @@
 	background-color: #050505;
 	padding: 20px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    color: white;
+    color: rgb(255, 255, 255);
     width: 85%;
     height: 85%;
     overflow-y:auto;
     flex-wrap:nowrap;
     box-sizing: border-box;
-    border: 2px solid rgba(216, 50, 50, 0.8);
-    box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
+    border: 2px solid rgba(245, 245, 245, 0.556);
+    box-shadow: 0px 0px 5px 2px rgb(190, 168, 168);
     border-radius: 15px;
 }
 
@@ -36,7 +36,7 @@
 	text-align: center;
 	margin: none;
     font-size: 2em;
-    color: #214484;
+    color: #2E3E64;
     text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
 }
 
@@ -56,8 +56,8 @@
 	width: 90%;
 	padding: 10px;
 	margin-bottom: 20px;
-    border: 2px solid rgba(216, 50, 50, 0.8);
-    box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
+    border: 2px solid rgba(245, 245, 245, 0.556);
+    box-shadow: 0px 0px 5px 2px rgb(190, 168, 168);
 	border-radius: 15px;
     background-color: #050505;
     color: whitesmoke;
@@ -66,14 +66,14 @@
 }
 
 .form-container input[type="submit"] {
-	background-color: #fa130377;
-        color: #214484;
+	background-color: #cd5f66ae;
+        color: whitesmoke;
         padding: 12px 20px;
         border: none;
         border-radius: 15px;
         cursor: pointer;
         width: 50%;
-        border: 2px solid rgba(216, 50, 50, 0.8);
+        border: 2px solid #CD5F66;
         font-size: 1.5em;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
@@ -81,10 +81,9 @@
 }
 
 .form-container input[type="submit"]:hover {
-	background-color: #fa1403;
-        box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
-        color: #214484;
-        text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
+	background-color: #CD5F66;
+        box-shadow: 0px 0px 5px 1px #CD5F66;
+        color: whitesmoke;
 }
 
 .profile-container {
@@ -93,15 +92,16 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 0;
-	background-color: #04040474;
+	background-color: #04040490;
 	padding: 20px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     color: white;
     flex-direction: row;
     display: flex;
-    border: 2px solid rgba(216, 50, 50, 0.8);
+    border: 2px solid rgba(245, 245, 245, 0.556);
+    box-shadow: 0px 0px 5px 2px rgb(190, 168, 168);
     border-radius: 15px;
-    box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
+    
     width: 80%;
     max-width: 800px;
     height: 90%;
@@ -125,7 +125,7 @@
     
     margin-top: none;
     font-size: 2.5em;
-    color: #214484;
+    color: #2E3E64;
     text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
 }
 .profile-container p {
@@ -156,7 +156,7 @@ color: #277527;
 text-shadow: 0px 0px 10px #00bfff, 0px 0px 10px #00bfff, 0px 0px 10px #00bfff;}
 
 body {
-background-image: url("space4.jpg");
+background-color:#010101;
 overflow: auto;
 margin: none;
 padding: none;
@@ -175,9 +175,9 @@ text-align: center;
 align-items: center;
 justify-content:center;
 display: flex;
-border: 2px solid rgba(216, 50, 50, 0.8);
+border: 1px solid #fbfbf9;
 border-radius: 15px;
-box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
+box-shadow: 0px 0px 5px 1px #fbfbf9;
 height: 50%;
 width: 85%;
 padding: auto;
@@ -186,12 +186,12 @@ overflow-y: auto;
 
     
 font-size: 2em;
-color: #214484;
+color: #2E3E64;
 text-shadow: 0px 0px 2px #00bfff, 0px 0px 10px #00bfff, 0px 0px 2px #00bfff;
 }
 
 .bottom-right:hover {
-color: #214484;
+color: #2E3E64;
 text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
 }
 
@@ -265,6 +265,19 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
         
     }
 
+    
+    h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+            word-break: break-word; /* add word-break property */
+          }
+    
+    h2 {
+        word-break: break-word;
+
+    }
+
     .profile-container {
         display: flex;
         flex-direction: row;
@@ -272,6 +285,7 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
         justify-content: space-between;
         height: 85%;
         width: 85%;
+        flex-wrap: nowrap;
   }
 
   .bottom-right {
@@ -279,8 +293,15 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
       padding: auto;
       margin: none;
       width: 50%;
-      height:60%
+      height:85%;
+      max-height: 400px;
+      
+
+
     }
+
+    
+    
 }
 
 /*phone*/
@@ -303,6 +324,11 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
 
     }
 
+    .profile-container {
+        height: 85%;
+        width: 85%;
+    }
+
 }
 
 footer {
@@ -312,4 +338,52 @@ footer {
     text-align: center;
     color: rgba(128, 128, 128, 0.626);
   }
+
+/*Small Phones*/
+
+  @media screen and (max-width: 640px) {
+    body {
+      font-size: 70%; 
+    }
+    
+  }
   
+  @media screen and (max-height: 640px) {
+    body {
+      font-size: 50%; 
+     
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 85%;
+        width: 85%;
+        flex-wrap: nowrap;
+  }
+
+  .profile-container ul {
+    display: grid;
+   
+    
+    }
+
+    .bottom-right {
+
+        padding: auto;
+        margin: none;
+        width: 50%;
+        height:85%;
+        max-height: 400px;
+        
+  
+  
+      }
+
+
+
+
+
+  }
