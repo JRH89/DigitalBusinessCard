@@ -23,27 +23,53 @@ const formContainer = document.querySelector('.form-container');
 const profileContainer = document.querySelector('.profile-container');
 
 form.addEventListener('submit', (event) => {
-	event.preventDefault();
+    event.preventDefault();
 
-	const nameValue = nameInput.value;
-	const jobValue = jobInput.value;
-	const phoneValue = phoneInput.value;
-	const emailValue = emailInput.value;
-	const social1Value = social1Input.value;
-	const social2Value = social2Input.value;
-	const social3Value = social3Input.value;
-	const social4Value = social4Input.value;
+    // Retrieve form values
+    const nameValue = nameInput.value;
+    const jobValue = jobInput.value;
+    const phoneValue = phoneInput.value;
+    const emailValue = emailInput.value;
+    const social1Value = social1Input.value;
+    const social2Value = social2Input.value;
+    const social3Value = social3Input.value;
+    const social4Value = social4Input.value;
 
+    // Update profile elements
+    profileName.textContent = nameValue;
+    profileJob.textContent = jobValue;
+    profileSocial1.href = social1Value;
+    profileSocial2.href = social2Value;
+    profileSocial3.href = social3Value;
+    profileSocial4.href = social4Value;
+    formContainer.style.display = 'none';
+    profileContainer.style.display = 'flex';
 
-	profileName.textContent = nameValue;
-	profileJob.textContent = jobValue;
-	profilePhone.textContent = phoneValue;
-	profileEmail.textContent = emailValue;
-	profileSocial1.href = social1Value;
-	profileSocial2.href = social2Value;
-	profileSocial3.href = social3Value;
-	profileSocial4.href = social4Value;
-	formContainer.style.display = 'none';
-	profileContainer.style.display = 'flex';
+    // Update email link and span elements
+    emailLink.href = `mailto:${emailValue}`;
     
 });
+
+function makeCall(event) {
+    event.preventDefault();
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location.href = "tel:" + phoneInput.value;
+    } else {
+        profilePhone.innerHTML = phoneInput.value;
+    }
+}
+
+const emailIcon = document.getElementById("email-icon");
+
+
+// Get the email input field and the email link elements
+
+const emailLink = document.getElementById("profile-email-link");
+
+// Set the href attribute of the email link to the email input value
+emailLink.href = `mailto:${emailInput.value}`;
+
+// Set the text content of the email span to the email input value
+const emailSpan = document.getElementById("profile-email");
+emailSpan.textContent = emailInput.value;
+

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
     <meta name="description" content="game developer, software developer, gameplay programmer, python, javascript, unreal engine, unity"/>
     <meta property="og:image" content="Hooker Hill.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/png" href="Hooker Hill.png" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
 </head>
@@ -50,19 +51,22 @@
             
                 <h1><span id="profile-name"></span></h1>
                 <h2><span id="profile-job"></span></h2>
-                <p><span id="profile-phone"></span></p>
-                <p><span id="profile-email"></span></p>
+                <p>
+                  <a href="#" id="profile-phone-link" onclick="makeCall(event)">
+                      <i class="fa fa-phone" id="phone-icon"></i> <span id="profile-phone"></span>
+                  </a>
+              </p>
+              <p><a href="#" id="profile-email-link"><i class="fa fa-envelope" id="email-icon"></i> <span id="profile-email"></span></a></p>
+
                 
 			</div>
-            <div class="bottom-right">
-            
-                <ul>
-				<li><a href="#" id="profile-social1">LinkedIn</a></li>
-				<li><a href="#" id="profile-social2">GitHub</a></li>
-				<li><a href="#" id="profile-social3">Portfolio</a></li>
-				<li><a href="#" id="profile-social4">Other</a></li>
-			    </ul>
-            
+            <div class="bottom-right">           
+              <ul>
+              <li><a href="#" id="profile-social1">LinkedIn</a></li>
+              <li><a href="#" id="profile-social2">GitHub</a></li>
+              <li><a href="#" id="profile-social3">Portfolio</a></li>
+              <li><a href="#" id="profile-social4">Other</a></li>
+			        </ul>         
             </div>
 		</div>
 	

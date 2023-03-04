@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    margin: none;
     }
 
 .container {
@@ -107,27 +107,33 @@
     align-items: center;
     flex-wrap:wrap;
     margin:auto;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .profile-container h2 {
 	text-align: center;
 	margin-bottom: 20px;
 }
-
+.profile-container h1 {
+    margin: none;
+    margin-top: none;
+    font-size: 2.5em;
+    color: #214484;
+    text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
+}
 .profile-container p {
 	margin-bottom: 10px;
 }
 
-.profile-container ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
+
 
 .profile-container li {
-	margin-bottom: 10px;
+	
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    
     
 }
 
@@ -152,7 +158,15 @@ font-size: 1.5em;
 }
 
 .bottom-right {
-font-size: 2.0em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(216, 50, 50, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
+    height: 40%;
+    
+font-size: 2.5em;
 color: #214484;
 text-shadow: 0px 0px 2px #00bfff, 0px 0px 10px #00bfff, 0px 0px 2px #00bfff;
 }
@@ -163,28 +177,34 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
 }
 
 .profile-container ul {
-display: grid;
-grid-template-columns: repeat(2, 1fr); /* two columns of equal width */
-gap: 10px; /* gap between grid items */
-list-style: none; /* remove bullets from the list */
-padding: 0; /* remove default padding */
-text-align: center;
-align-items: center;
-justify-content: center;
-  }
-  
-  .profile-container li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two columns of equal width */
+    grid-template-rows: 1fr; /* each row takes up entire container */
+    gap: 10px; /* gap between grid items */
+    list-style: none; /* remove bullets from the list */
+    padding: 0; /* remove default padding */
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    justify-items: center;
+    
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+    
   }
   
+ 
   .profile-container a {
     display: block;
     padding: 10px;
-    color: #333;
+    color: #2f305a;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
     
   }
   
