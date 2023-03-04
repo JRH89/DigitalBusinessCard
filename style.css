@@ -102,6 +102,7 @@
     border-radius: 15px;
     box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
     width: 80%;
+    max-width: 600px;
     height: 80%;
     justify-content: space-evenly;
     align-items: center;
@@ -122,9 +123,14 @@
     text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
 }
 .profile-container p {
-	margin-bottom: 10px;
-}
-
+    font-size: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 
 
 .profile-container li {
@@ -139,8 +145,7 @@
 
 .profile-container a:hover {
 color: #277527;
-text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;
-}
+text-shadow: 0px 0px 10px #00bfff, 0px 0px 10px #00bfff, 0px 0px 10px #00bfff;}
 
 body {
 background-image: url("space4.jpg");
@@ -158,15 +163,18 @@ font-size: 1.5em;
 }
 
 .bottom-right {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid rgba(216, 50, 50, 0.8);
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
-    height: 40%;
+text-align: center;
+align-items: center;
+justify-content:center;
+display: flex;
+border: 2px solid rgba(216, 50, 50, 0.8);
+border-radius: 15px;
+box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
+height: 40%;
+width: 90%;
+max-width: 700px;
     
-font-size: 2.5em;
+font-size: 2em;
 color: #214484;
 text-shadow: 0px 0px 2px #00bfff, 0px 0px 10px #00bfff, 0px 0px 2px #00bfff;
 }
@@ -187,12 +195,9 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
     align-items: center;
     justify-content: space-between;
     justify-items: center;
-    
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        
-    
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
   
  
@@ -205,7 +210,28 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    
+    font-size: 1.3em;
+  
+  
   }
   
 
+  .fa-phone, .fa-envelope {
+    font-size: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.top-left p {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-left i {
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  
