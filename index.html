@@ -2,211 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+	<title>Digital Business Card</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
     <meta name="description" content="game developer, software developer, gameplay programmer, python, javascript, unreal engine, unity"/>
-    <meta property="og:image" content="Screenshot_20230227-202506-791.png"/>
+    <meta property="og:image" content="Hooker Hill.png"/>
+    <link rel="shortcut icon" type="image/png" href="Hooker Hill.png" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
-    
-    <style>
-
-        * {
-        box-sizing: border-box;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-        }
-        body {  
-        background-image: url("space2.jpg");
-        margin:none;
-        padding: none;
-        }
-
-        input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        color: #214484;
-        text-shadow: 0px 0px 1px #00bfff, 0px 0px 1px #00bfff, 0px 0px 1px #00bfff;
-        border-radius: 10px;
-        resize: vertical;
-        background-color: #050505ac;
-        }
-
-        label {
-        padding: 12px 12px 12px 0;
-        display: inline-block;
-        color: #2f7e2f; 
-        text-shadow: 0px 0px 2px #00ff7f, 0px 0px 2px #00ff7f, 0px 0px 2px #00ff7f;
-        font-size: 1.5em;
-        }
-
-        input[type=submit] {
-        background-color: #fa130377;
-        color: #214484;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 12px;
-        cursor: pointer;
-        float: right;
-        border: 2px solid rgba(216, 50, 50, 0.8);
-        font-size: 1.5em;
-        }
-
-        input[type=submit]:hover {
-        background-color: #fa1403;
-        box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
-        color: #214484;
-        text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
-        }
-
-        
-        .container {
-        border-radius: 15px;
-        background-color: #050505ac;
-        padding: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 85%;
-        height: 85%;
-        max-width: 800px;
-        max-height: 90%;
-        border: 2px solid rgba(216, 50, 50, 0.8);
-        box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items:center;
-        overflow-y: auto;
-        
-        
-        }
-    
-        .col-25 {
-        float: left;
-        width: 25%;
-        margin-top: 6px;
-        }
-
-        footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        }
-
-        .col-75 {
-        float: right;
-        width: 75%;
-        margin-top: 6px;
-        }
-
-        .col-26 {
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5em;
-        text-align: center;
-        border: 2px solid #214484b8;
-        box-shadow: 0px 0px 10px 2px #00bfff;
-        border-radius: 15px;
-        }
-
-        .footer {
-          text-align: center;
-          color: rgba(128, 128, 128, 0.626);
-        }
-        
-        .row:after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-
-        @media screen and (max-width: 600px) {
-        .col-25, .col-75, .col-26, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-        }}
-
-    </style>
-
 </head>
-
 <body>
-  <script type="text/javascript" src="script.js"></script>
-  <div class="container">
-        
-    <div class="col-26">
-      <label for="Header">Enter your info</label>
-    </div>
-    <form action="https://jrh89.github.io/DigitalBusinessCard/profile" id="my-form">
+	<div class="container">
+		<div class="form-container">
+			<h2>Details Form</h2>
+			<form action="" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
 
-   
+				<label for="job">Job:</label>
+				<input type="text" id="job" name="job" required>
+
+				<label for="phone">Phone Number:</label>
+				<input type="tel" id="phone" name="phone" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="social1">Linked-In:</label>
+				<input type="url" id="social1" name="social1" required>
+
+				<label for="social2">GitHub:</label>
+				<input type="url" id="social2" name="social2" required>
+
+				<label for="social3">Portfolio:</label>
+				<input type="url" id="social3" name="social3" required>
+
+				<label for="social4">Other:</label>
+				<input type="url" id="social4" name="social4" required>
+
+				<input type="submit" value="Submit" id="submit-btn">
+			</form>
+		</div>
+
+		<div class="profile-container">
+			
+            <div class="top-left">
+            
+                <h1><span id="profile-name"></span></h1>
+                <h2><span id="profile-job"></span></h2>
+                <p><span id="profile-phone"></span></p>
+                <p><span id="profile-email"></span></p>
+                
+			</div>
+            <div class="bottom-right">
+            
+                <ul>
+				<li><a href="#" id="profile-social1">LinkedIn</a></li>
+				<li><a href="#" id="profile-social2">GitHub</a></li>
+				<li><a href="#" id="profile-social3">Portfolio</a></li>
+				<li><a href="#" id="profile-social4">Other</a></li>
+			    </ul>
+            
+            </div>
+		</div>
+	
     
-    <div class="row">
-      <div class="col-25">
-        <label for="fname">Name</label>
-      </div>
-    <div class="col-75">
-      <input type="text" id="name2" name="name2" placeholder="First and Last...">         
-    </div> 
-  </div>
-  
-  <div class="row">
-    <div class="col-25">
-      <label for="title">Title</label>
     </div>
-    <div class="col-75">
-      <input type="text" id="job2" name="job2" placeholder="Your job title..">
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-25">
-      <label for="subject">Links</label>
-    </div>
-    
-    <div class="col-75">
-        <input type="text" id="link1" name="link1" placeholder="Portfolio">
-    </div>
-    <div class="col-75">
-        <input type="text" id="link2" name="link2" placeholder="Github">
-    </div>
-    <div class="col-75">
-        <input type="text" id="link3" name="link3" placeholder="LinkedIn">
-    </div>
-    <div class="col-75">
-        <input type="text" id="link4" name="link4" placeholder="Twitter">
-    </div>
-    <div class="col-75">
-        <input type="text" id="link5" name="link5" placeholder="Reddit">
-    </div>
-    <div class="col-75">
-        <input type="text" id="link6" name="link6" placeholder="E-mail">
-    </div>
-    
-  </div>
-  
-  <br>
 
-  <div class="row">
-    <input id="submit" title="submit" type="submit" value="Submit">
-  </div>
- </form>
-</div>
-
-
+	<script src="script.js"></script>
 </body>
-<footer>
-    <p>
-        Hooker Hill Studios © 2023
-    </p>
-
- </footer>
-
 </html>
-
-
