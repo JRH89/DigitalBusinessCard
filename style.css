@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: none;
+    padding: none;
     }
 
 .container {
@@ -24,7 +25,7 @@
     width: 85%;
     height: 85%;
     overflow-y:auto;
-    
+    flex-wrap:nowrap;
     box-sizing: border-box;
     border: 2px solid rgba(216, 50, 50, 0.8);
     box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
@@ -69,7 +70,7 @@
         color: #214484;
         padding: 12px 20px;
         border: none;
-        border-radius: 12px;
+        border-radius: 15px;
         cursor: pointer;
         width: 50%;
         border: 2px solid rgba(216, 50, 50, 0.8);
@@ -102,8 +103,9 @@
     border-radius: 15px;
     box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
     width: 80%;
-    max-width: 600px;
-    height: 80%;
+    max-width: 800px;
+    height: 90%;
+    box-sizing:border-box;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap:wrap;
@@ -117,18 +119,21 @@
 }
 .profile-container h1 {
     margin: none;
+    
     margin-top: none;
     font-size: 2.5em;
     color: #214484;
     text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
 }
 .profile-container p {
-    font-size: 20px;
+    font-size: .8em;
     margin-bottom: 0;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: none;
+    padding: none;
   }
   
 
@@ -170,9 +175,11 @@ display: flex;
 border: 2px solid rgba(216, 50, 50, 0.8);
 border-radius: 15px;
 box-shadow: 0px 0px 10px 2px rgb(250, 5, 5);
-height: 40%;
-width: 90%;
-max-width: 700px;
+height: 50%;
+width: 85%;
+padding: auto;
+margin: none;
+
     
 font-size: 2em;
 color: #214484;
@@ -215,9 +222,18 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
   
   }
   
+  .h1 {
+    margin: none;
+    padding: none;
+ 
+        margin-top: 0;
+        margin-bottom: 0;
+      
+      
+  }
 
   .fa-phone, .fa-envelope {
-    font-size: 60px;
+    font-size: 2em;
     vertical-align: middle;
     margin-right: 10px;
 }
@@ -228,10 +244,55 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
   }
   
   .top-left i {
-    font-size: 60px;
+    font-size: 3em;
     align-items: center;
     justify-content: center;
   }
   
-
+/* ...not phones (TVs, PCs)... */
   
+  @media (min-width: 768px) {
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 85%;
+        width: 85%;
+  }
+
+  .bottom-right {
+
+      padding: auto;
+      margin: none;
+      width: 50%;
+      height:60%
+    }
+}
+
+/*phone*/
+@media (max-width: 767px) {
+
+
+    .bottom-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .profile-container ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
