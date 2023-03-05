@@ -36,17 +36,17 @@
 	text-align: center;
 	margin: none;
     font-size: 2em;
-    color: #2E3E64;
-    text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
-}
+    color: #2697d8;
+    /*text-shadow: 0px 0px 1px #2697d8, 0px 0px 1px #2697d8, 0px 0px 1px #2697d8;
+*/}
 
 .form-container label {
 	display: flex;
     font-size: 1.25em;
 	margin-bottom: 10px;
-    color: #277527;
-    text-shadow: 0px 0px 3px #00ff7f, 0px 0px 3px #00ff7f, 0px 0px 3px #00ff7f;
-}
+    color: #7ed957;
+    /*text-shadow: 0px 0px 3px #00ff7f, 0px 0px 3px #00ff7f, 0px 0px 3px #00ff7f;
+*/}
 
 .form-container input[type="text"],
 .form-container input[type="tel"],
@@ -66,14 +66,14 @@
 }
 
 .form-container input[type="submit"] {
-	background-color: #cd5f66ae;
+	background-color: #ff5757a5;
         color: whitesmoke;
         padding: 12px 20px;
         border: none;
         border-radius: 15px;
         cursor: pointer;
         width: 50%;
-        border: 2px solid #CD5F66;
+        border: 2px solid #ff5757;
         font-size: 1.5em;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
@@ -92,25 +92,22 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 0;
-	background-color: #04040490;
+	background-color: #010101;
 	padding: 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    color: white;
-    flex-direction: row;
-    display: flex;
-    border: 2px solid rgba(245, 245, 245, 0.556);
-    box-shadow: 0px 0px 5px 2px rgb(190, 168, 168);
-    border-radius: 15px;
-    
-    width: 80%;
-    max-width: 800px;
-    height: 90%;
-    box-sizing:border-box;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap:wrap;
-    margin:0;
-    overflow-y: auto;
+  color: white;
+  flex-direction: row;
+  display: flex;
+  border: 1px solid whitesmoke;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 800px;
+  height: 90%;
+  box-sizing:border-box;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap:wrap;
+  margin:0;
+  overflow-y: auto;
 }
 
 .top-left h1 {
@@ -125,9 +122,9 @@
     
     margin-top: none;
     font-size: 2.5em;
-    color: #2E3E64;
-    text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
-}
+    color: #2697d8;
+    /*text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
+*/}
 .profile-container p {
     font-size: .8em;
     margin-bottom: 0;
@@ -152,8 +149,8 @@
 }
 
 .profile-container a:hover {
-color: #277527;
-text-shadow: 0px 0px 10px #00bfff, 0px 0px 10px #00bfff, 0px 0px 10px #00bfff;}
+color: #7ed957;
+text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;}
 
 body {
 background-color:#010101;
@@ -165,8 +162,8 @@ text-align: center;
 
 .top-left {
 align-items: center;
-color: #277527;
-text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;
+color: #7ed957;
+/*text-shadow: 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f, 0px 0px 5px #00ff7f;*/
 font-size: 1.5em;
 }
 
@@ -175,9 +172,9 @@ text-align: center;
 align-items: center;
 justify-content:center;
 display: flex;
-border: 1px solid #fbfbf9;
+border: 1px solid #7ed957;
 border-radius: 15px;
-box-shadow: 0px 0px 5px 1px #fbfbf9;
+/*box-shadow: 0px 0px 5px 1px #ff5757;*/
 height: 50%;
 width: 85%;
 padding: auto;
@@ -186,14 +183,14 @@ overflow-y: auto;
 
     
 font-size: 2em;
-color: #2E3E64;
-text-shadow: 0px 0px 2px #00bfff, 0px 0px 10px #00bfff, 0px 0px 2px #00bfff;
-}
+color: #2697d8;
+/*text-shadow: 0px 0px 2px #00bfff, 0px 0px 10px #00bfff, 0px 0px 2px #00bfff;
+*/}
 
 .bottom-right:hover {
 color: #2E3E64;
-text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
-}
+/*text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
+*/}
 
 .profile-container ul {
     display: grid;
@@ -215,7 +212,7 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
   .profile-container a {
     display: block;
     padding: 10px;
-    color: #2f305a;
+    color: #2697d8;
     text-decoration: none;
     transition: color 0.5s ease;
     text-align: center;
@@ -229,17 +226,15 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
   .h1 {
     margin: none;
     padding: none;
- 
-        margin-top: 0;
-        margin-bottom: 0;
-      
-      
+    margin-top: 0;
+    margin-bottom: 0;    
   }
 
   .fa-phone, .fa-envelope {
-    font-size: 2em;
-    vertical-align: middle;
-    margin-right: 10px;
+  font-size: 2em;
+  vertical-align: middle;
+  margin-right: 10px;
+  color:#ff5757
 }
 
 .top-left p {
@@ -258,34 +253,33 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
   @media (min-width: 768px) {
     
     .container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; 
     }
 
     
     h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin: 0;
-            word-break: break-word; /* add word-break property */
-          }
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    word-break: break-word; /* add word-break property */
+    }
     
     h2 {
-        word-break: break-word;
+    word-break: break-word;
 
     }
 
     .profile-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 85%;
-        width: 85%;
-        flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 85%;
+    width: 85%;
+    flex-wrap: nowrap;
   }
 
   .bottom-right {
@@ -296,12 +290,8 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
       height:85%;
       max-height: 400px;
       
-
-
     }
-
-    
-    
+   
 }
 
 /*phone*/
@@ -309,24 +299,24 @@ text-shadow: 0px 0px 5px #00bfff, 0px 0px 5px #00bfff, 0px 0px 5px #00bfff;
 
 
     .bottom-right {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
 
     .form-container {
-        height: 90%;
-        width: 90%;
+      height: 90%;
+       width: 90%;
     }
 
     .profile-container ul {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
 
     }
 
     .profile-container {
-        height: 85%;
-        width: 85%;
+      height: 85%;
+      width: 85%;
     }
 
 }
@@ -343,14 +333,14 @@ footer {
 
   @media screen and (max-width: 640px) {
     body {
-      font-size: 70%; 
+      font-size: 80%; 
     }
     
   }
   
   @media screen and (max-height: 640px) {
     body {
-      font-size: 50%; 
+      font-size: 80%; 
      
     }
 
