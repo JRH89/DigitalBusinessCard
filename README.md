@@ -1,12 +1,10 @@
 <h1>Digital Business Card</h1>
 <img SRC="Screenshot_20230304-215418_3.png">
-<img src="Screenshot_20230227-202428-890.png">
+<img src="Screenshot_20230304-215412_2.png">
 <h2>Summary:</h2>
 An app I am creating that will allow you to easily share your contact information and store others'
 info with a single link or qr code.
-<h2>Current stage:</h2>
-I am currently in the process of designing the digital card and making it so that it is
-responsive to most popular screen sizes.
+
 <h2>Goal:</h2>
 My goal is have a landing page where users input their
 name, job title, up to 6 links, and 4-16 skill icons.
