@@ -22,6 +22,7 @@
   color: rgb(255, 255, 255);
   width: 85%;
   height: 85%;
+  max-width: 900px;
   overflow-y:auto;
   flex-wrap:nowrap;
   box-sizing: border-box;
@@ -56,7 +57,7 @@ hr {
 .form-container input[type="email"],
 .form-container input[type="url"] {
 	display: flex;
-	width: 90%;
+	width: 100%;
 	padding: 10px;
 	margin-bottom: 20px;
   border: 1px solid rgba(245, 245, 245, 0.539);
