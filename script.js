@@ -60,10 +60,7 @@ function makeCall(event) {
 }
 
 
-  
-
 const emailIcon = document.getElementById("email-icon");
-
 
 // Get the email input field and the email link elements
 
@@ -76,3 +73,17 @@ emailLink.href = `mailto:${emailInput.value}`;
 const emailSpan = document.getElementById("profile-email");
 emailSpan.textContent = emailInput.value;
 
+// Select the button element
+var purchaseButton = document.getElementById("purchase-btn");
+
+// Hide the button initially
+purchaseButton.style.display = "none";
+
+// Add event listener to the submit button
+var submitButton = document.getElementById("submit-btn");
+submitButton.addEventListener("click", function() {
+  // Show the purchase button after 3 seconds
+  setTimeout(function() {
+    purchaseButton.style.display = "block";
+  }, 3000);
+});
