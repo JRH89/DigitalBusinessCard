@@ -391,5 +391,11 @@ footer {
   
   
 
-  
-  
+.profile-container #profile-phone {
+  display: none;
+}
+
+.profile-container .top-left .show-phone {
+  display: inline;
+  cursor: pointer;
+}
