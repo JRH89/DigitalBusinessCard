@@ -16,7 +16,7 @@ document.getElementById('profile-name').textContent = name;
 document.getElementById('profile-job').textContent = job;
 //document.getElementById('profile-email').textContent = email;
 document.getElementById('profile-email-link').href = `mailto:${email}`;
-document.getElementById('profile-phone').textContent = phone;
+//document.getElementById('profile-phone').textContent = phone;
 document.getElementById('profile-phone-link').href = `tel:${phone}`;
 document.getElementById('profile-social1').href = social1;
 document.getElementById('profile-social2').href = social2;
@@ -28,13 +28,12 @@ function makeCall(event) {
     event.preventDefault();
     const phoneNumber = event.target.textContent.trim();
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        window.location.href = `tel:${phoneNumber}`;
+      window.location.href = `tel:${phone}`;
     } else {
-        const phoneElement = document.getElementById('profile-phone');
-        phoneElement.classList.add('show-phone');
+      document.getElementById('profile-phone').textContent = phone;
+      document.getElementById('profile-phone').classList.add('show-phone');
     }
-}
+  }
+  
 
-// Add click event listener to phone icon
-const phoneLink = document.getElementById('profile-phone-link');
-phoneLink.addEventListener('click', makeCall);
+
