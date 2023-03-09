@@ -176,6 +176,7 @@ body {
   overflow-y: auto;     
   font-size: 2em;
   color: #2697d8;
+  flex-shrink: 0;
 }
 
 .bottom-right:hover {
@@ -276,6 +277,7 @@ body {
       width: 50%;
       height:85%;
       max-height: 400px;
+      flex-shrink: 0;
     }
    
   }
