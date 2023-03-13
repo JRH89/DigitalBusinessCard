@@ -8,7 +8,10 @@ const connection = mysql.createConnection({
 });
 
 exports.handler = function(event, context, callback) {
-  const body = JSON.parse(event.body);
+  connection.connect(); // establish database connection
+  
+  const body = JSON.parse(JSON.stringify(event.body));
+
   const username = body.username;
   const email = body.email;
   const password = body.password;
